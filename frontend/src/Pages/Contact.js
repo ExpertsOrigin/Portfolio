@@ -1,14 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Assets/Style/Contact.css'
+import axios from 'axios'
 export default function Contact() {
+const [data,setdata] = useState({});
+const handleinput = (e)=>{
+setdata({
+  ...data, [e.target.name]:e.target.value
+})
+}
+
+const submit = ()=>{
+  if(data.name !== undefined && data.email !== undefined && data.phone !== undefined && data.textarea !== undefined){
+    axios.post("http://localhost:4000/contactform",{data}).then((res)=>{
+    alert(res.data);
+    window.location.reload();
+    }).catch((error)=>{
+    console.log(error)
+    })
+  }else{
+    alert("please enter data")
+  }
+}
+
   return (
     <>
       <div className="contact-header">
         <div className="emptydiv"></div>
         <div className="contact-header-text">
-          <h4 className="header-h4-1">Contact</h4>
-          <h2 className="header-h2-1">Please Use Contact Form</h2>
-          <h2 className="header-h2-1">In Bellow</h2>
+          <h4 className="header-h4-1">Let's Talk</h4>
+          <h2 className="header-h2-1">We're Here to Help</h2>
+          <h3 className="header-h2-1">Reach Out Today</h3>
         </div>
       </div>
 
@@ -21,16 +42,16 @@ export default function Contact() {
 
       <section className="contact-form">
         <h3 className="form-h3-1">Get In Touch</h3>
-        <input className='contact-form-input' type="text" placeholder="What's Your Name ?" />
-        <input className='contact-form-input' type="text" placeholder="What's Your Email Address ?" />
-        <input className='contact-form-input' type="text" placeholder="What's Your Phone No ?" />
+        <input className='contact-form-input' name='name' type="text" placeholder="What's Your Name ?" onChange={handleinput}  />
+        <input className='contact-form-input' name='email' type="text" placeholder="What's Your Email Address ?" onChange={handleinput} />
+        <input className='contact-form-input' name='phone' type="text" placeholder="What's Your Phone No ?" onChange={handleinput} />
         <label htmlFor=""><p className="question-p">What type of Services you are looking for ?</p> <br />
-          <input className='chekcbox1' type="checkbox" />&nbsp;<label htmlFor="">Web Design</label>
-          <input className='chekcbox' type="checkbox" />&nbsp;<label htmlFor="">Web Development</label>
-          <input className='chekcbox' type="checkbox" />&nbsp;<label htmlFor="">eCommerce</label>
-          <input className='chekcbox' type="checkbox" />&nbsp;<label htmlFor="">Bug Fixing</label> <br />
-          <input className='contact-form-input last-input' type="text" placeholder='Tell me about your project ?' />
-          <button className="contact-form-btn">Submit Message</button>
+          <input className='chekcbox1' name='webdesign'  type="checkbox" />&nbsp;<label htmlFor="">Web Design</label>
+          <input className='chekcbox'  name='webdev' type="checkbox" />&nbsp;<label htmlFor="">Web Development</label>
+          <input className='chekcbox'  name='ecommerce' type="checkbox" />&nbsp;<label htmlFor="">eCommerce</label>
+          <input className='chekcbox'  name='bugfixing' type="checkbox" />&nbsp;<label htmlFor="">Bug Fixing</label> <br />
+          <input className='contact-form-input last-input' name='textarea' type="text" placeholder='Tell me about your project ?' onChange={handleinput} />
+          <button className="contact-form-btn" onClick={submit}>Submit Message</button>
         </label>
 
       </section>
