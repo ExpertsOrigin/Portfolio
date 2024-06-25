@@ -1,3 +1,7 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
 .home-header {
   background-image: url("../Images/headerimg.jpg");
   height: 90vh;
@@ -96,7 +100,7 @@
 .home-hr-1 {
   border: 2px solid red;
   width: 90%;
-  margin:4% auto;
+  margin: 4% auto;
 }
 
 .section-3 {
@@ -161,53 +165,246 @@
 
 }
 
-.latest-work{
+.latest-work {
   /* border: 2px solid red; */
   width: 90%;
   margin: 5% auto;
 }
-.latest{
+
+.latest {
   /* border: 2px solid red; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-; */
   flex-wrap: wrap;
 }
-.latest-cards{
+
+.latest-cards {
   /* border: 2px solid red; */
-width: 32%;
-margin:2% 0 2% 0;
-border-radius: 10px;
+  width: 30%;
+  margin: 2% 1% 2% 2%;
+  border-radius: 10px;
 
 }
-.latest-h5{
-  margin:6% 0 5% 0;
+
+.latest-h5 {
+  margin: 6% 0 5% 0;
 }
-.latest-cards img{
+
+.latest-cards img {
   width: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-.latestwork-h1-1{
+
+.latestwork-h1-1 {
   /* border: 2px solid red; */
   font-size: 3rem;
   font-weight: 700;
   color: orange;
-  margin:3% 0 3% 0;
+  margin: 3% 0 3% 0;
 }
-.load-more{
+.load-projects-link{
+  text-decoration: none;
+  color: white;
+}
+.load-more {
   width: 12%;
   height: 6vh;
   background-color: orange;
   border-radius: 30px;
   padding: 0% 1% 0% 1%;
-  margin: 0px auto;
+  /* margin: 0px auto; */
 }
 
-.create{
+.create {
   /* border: 2px solid red; */
   font-size: 4rem;
   color: orange;
   width: 60%;
-  margin: 2% auto;
+  margin: 7% auto;
   text-align: center;
+}
+
+
+
+
+@media screen and (max-width:769px) {
+
+  /* .home-header{
+    border: 2px solid red;
+    
+  } */
+  .upper-header {
+    /* border: 2px solid red ; */
+    width: 60%;
+  }
+
+  .header-p-1 {
+    font-size: 1.1rem;
+  }
+
+  .header-h1-1 {
+    font-size: 3rem;
+  }
+
+  .shadow__btn {
+    padding: 5px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+
+
+  .section-2 {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* .section-2-div{
+    border: 2px solid red;
+  } */
+  .section-2-p-1 {
+    /* border: 2px solid red; */
+    width: 99%;
+  }
+
+  .section2-h1-1 {
+    width: 100%;
+    /* border: 2px solid red; */
+    font-size: 2.4rem;
+  }
+
+  .section-2-img {
+    /* border: 2px solid red; */
+    margin: 4% auto;
+
+  }
+
+  .section-3{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-3-cards{
+    /* border: 2px solid red; */
+    width: 50%;
+    
+  }
+/* 
+  .section-4{
+    border: 2px solid red;
+  } */
+  .section-4-text{
+    /* border: 2px solid red; */
+    width: 80%;
+  }
+
+  .latest-work{
+    /* border: 2px solid red; */
+  }
+  .latest{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .latest-cards{
+    /* border: 2px solid red; */
+    width: 46%;
+  }
+
+  .load-more{
+    width: 22%;
+  }
+.create{
+  /* border: 2px solid red; */
+  width: 90%;
+  font-size: 3rem;
+
+}
+
+
+
+}
+
+
+
+@media screen and (max-width:550px) {
+  .home-header{
+    /* border: 2px solid red; */
+  }
+  .upper-header{
+    /* border: 2px solid red; */
+    width: 94%;
+    opacity: 0.9;
+  }
+  .section2-h1-1{
+    /* border: 2px solid red; */
+    font-size: 2rem;
+  }
+  .section-2-img{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: none;
+  }
+
+  .section-3{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+  }
+  .section-3-cards{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 0px auto;
+  }
+  .section-4{
+    /* border: 2px solid red; */
+    width: 100%;
+  }
+
+  .section-4-text{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 10%;
+    opacity: 0.8;
+
+
+  }
+
+
+  .latest{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+  }
+  .latest-cards{
+    width: 90%;
+    margin: 15px auto;
+  }
+  .load-more{
+    margin-left: 20px;
+  }
+
+  .create{
+    /* border: 2px solid red; */
+    font-size: 2rem;
+    width:100%;
+  }
+
+
+
+
+
+
+
+
+
+
 }

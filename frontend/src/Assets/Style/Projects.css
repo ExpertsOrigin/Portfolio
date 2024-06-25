@@ -1,0 +1,11 @@
+.projects-h1{
+    /* border: 2px solid red; */
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2%;
+}
+.allprojects{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 3% auto;
+}

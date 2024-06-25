@@ -169,3 +169,36 @@
 .btn:where(:hover, :focus) {
     color: #fff;
 }
+
+@media screen and (max-width:550px) {
+    .footer{
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+    }
+.footer-1{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 15px auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+.footer-last{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.copyright{
+    font-size: 0.8rem;
+    padding-top: 10px;
+
+}
+.footer-last-link{
+    display: none;
+}
+
+}

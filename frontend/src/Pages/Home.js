@@ -56,8 +56,8 @@ export default function Home() {
                     <div className="latest-cards"><img src={require("../Assets/Images/fruitables.png")} alt="" /> <h6 className="latest-h5">#WEB DESIGN</h6><h3 className="latest-h2">Trendy Minimal Headphone Branding</h3><i class="fi fi-ts-arrow-right rightarrow"></i></div>
                     <div className="latest-cards"><img src={require("../Assets/Images/getstark.png")} alt="" /> <h6 className="latest-h5">#WEB DESIGN</h6><h3 className="latest-h2">Trendy Minimal Headphone Branding</h3><i class="fi fi-ts-arrow-right rightarrow"></i></div>
                     <div className="latest-cards"><img src={require("../Assets/Images/basicdept.png")} alt="" /> <h6 className="latest-h5">#WEB DESIGN</h6><h3 className="latest-h2">Trendy Minimal Headphone Branding</h3><i class="fi fi-ts-arrow-right rightarrow"></i></div>
-                <button className="load-more">View All Projects</button>
                 </div>
+                <button  className="load-more"><Link className='load-projects-link'>View All Projects</Link></button>
 
                 {/* <div className="latest-more">
             </div> */}

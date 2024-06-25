@@ -5,7 +5,7 @@ import Navbar from './Pages/Navbarmenu'
 import Contact from './Pages/Contact';
 import Footer from './Pages/Footer';
 import Home from './Pages/Home';
-import About from './Pages/About';
+import Projects from './Pages/Projects';
 function App() {
   return (
     <>
@@ -14,7 +14,7 @@ function App() {
     <Routes>
 <Route index element={<Home/>} />
 <Route path='/contact' element={<Contact/>} />
-{/* <Route path='/about' element={<About/>} /> */}
+<Route path='/projects' element={<Projects/>} />
 
 
 
