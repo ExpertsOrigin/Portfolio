@@ -1,29 +1,8 @@
 import React, { useState } from 'react'
 import '../Assets/Style/Footer.css'
-import axios from 'axios'
-
 import { Link } from 'react-router-dom'
 export default function Footer() {
-  const [data, setdata] = useState({});
-  const handleinput = (e) => {
-    setdata({
-      ...data, [e.target.name]: e.target.value
-    })
-  }
-
-  const submit = () => {
-    if (data.name !== undefined && data.email !== undefined && data.textarea !== undefined) {
-      axios.post("http://localhost:4000/contactform", { data }).then((res) => {
-        alert(res.data);
-        window.location.reload();
-      }).catch((error) => {
-        console.log(error)
-      })
-    } else {
-      alert("please enter data")
-    }
-  }
-
+  
   return (
     <>
       <section className="footer">
