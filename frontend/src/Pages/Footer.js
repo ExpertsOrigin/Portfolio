@@ -17,10 +17,10 @@ export default function Footer() {
         <div className="footer-1" id='contact'>
           <h5 className="footer-1-h5-1">GET IN TOUCH</h5>
           <h1 className="footer-1-h2-1">Contact Us</h1>
-          <input type="text" className="footer-input" placeholder='Enter Name' name='name' onChange={handleinput} />
-          <input type="text" className="footer-input" placeholder='Enter Mail' name='email' onChange={handleinput} />
-          <textarea id="w3review" className="footer-input" name="textarea" rows="4" cols="50" placeholder='What types of services you want' onChange={handleinput} /><br />
-          <button class="btn" onClick={submit}>Submit</button>
+          <input type="text" className="footer-input" placeholder='Enter Name' name='name' />
+          <input type="text" className="footer-input" placeholder='Enter Mail' name='email' />
+          <textarea id="w3review" className="footer-input" name="textarea" rows="4" cols="50" placeholder='What types of services you want'  /><br />
+          <button class="btn" >Submit</button>
 
         </div>
 
